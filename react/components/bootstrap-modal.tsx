@@ -13,7 +13,7 @@ export default function BootstrapModal() {
       <div className="section-body">
         <h2 className="section-title">Modal</h2>
         <p className="section-lead">
-          Use Bootstrap’s JavaScript modal plugin to add dialogs to your site for
+          Use Bootstraps JavaScript modal plugin to add dialogs to your site for
           lightboxes, user notifications, or completely custom content.
         </p>
 
