@@ -3,6 +3,7 @@ import BootstrapCarousel from '@components/bootstrap-carousel';
 import BootstrapCollapse from '@components/bootstrap-collapse';
 import BootstrapDropdown from '@components/bootstrap-dropdown';
 import BootstrapForm from '@components/bootstrap-form';
+import BootstrapListGroup from '@components/bootstrap-listgroup';
 import Head from 'next/head';
 import Image from 'next/image';
 
@@ -12,7 +13,7 @@ export default function Home() {
       <Head>
         <title> Index </title>
       </Head>
-      <BootstrapForm />
+      <BootstrapListGroup />
     </div>
   )
 }
