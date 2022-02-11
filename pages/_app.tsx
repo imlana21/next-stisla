@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }: any): JSX.Element {
       </Head>
       <Component {...pageProps} />
       <Script src="/modules/jquery.min.js"/>
-      <Script src="/modules/popper.js" strategy="lazyOnload" />
+      <Script src="/modules/popper.js"/>
       <Script src="/modules/tooltip.js" strategy="lazyOnload" />
       <Script src="/modules/bootstrap/js/bootstrap.min.js" strategy="lazyOnload" />
       <Script src="/modules/nicescroll/jquery.nicescroll.min.js" strategy="lazyOnload" />

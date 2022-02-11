@@ -1,5 +1,7 @@
+import FooterComponent from '@components/footer';
+import HeaderComponent from '@components/header';
+import SidebarComponent from '@components/sidebar';
 import Head from 'next/head';
-import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -7,6 +9,9 @@ export default function Home() {
       <Head>
         <title> Index </title>
       </Head>
+      <HeaderComponent />
+      <FooterComponent />
+      <SidebarComponent />
     </div>
   )
 }

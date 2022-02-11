@@ -247,7 +247,11 @@ export default function ArticleComponent() {
                   cillum dolore eu fugiat nulla pariatur.
                 </p>
                 <div className="article-user">
-                  <Image alt="image" src="/img/avatar/avatar-1.png" />
+                  <Image 
+                    alt="image" 
+                    src="/img/avatar/avatar-1.png" 
+                    width="200%"
+                    height="200%"/>
                   <div className="article-user-details">
                     <div className="user-detail-name">
                       <a href="javascript:void(0)">Hasan Basri</a>
@@ -282,7 +286,11 @@ export default function ArticleComponent() {
                   cillum dolore eu fugiat nulla pariatur.
                 </p>
                 <div className="article-user">
-                  <Image alt="image" src="/img/avatar/avatar-3.png" />
+                  <Image 
+                    alt="image" 
+                    src="/img/avatar/avatar-3.png" 
+                    width="200%"
+                    height="200%"/>
                   <div className="article-user-details">
                     <div className="user-detail-name">
                       <a href="javascript:void(0)">Rizal Fakhri</a>
@@ -317,7 +325,11 @@ export default function ArticleComponent() {
                   cillum dolore eu fugiat nulla pariatur.
                 </p>
                 <div className="article-user">
-                  <Image alt="image" src="/img/avatar/avatar-2.png" />
+                  <Image 
+                    alt="image" 
+                    src="/img/avatar/avatar-2.png" 
+                    width="200%"
+                    height="200%"/>
                   <div className="article-user-details">
                     <div className="user-detail-name"> 
                       <a href="javascript:void(0)">Irwansyah Saputra</a>
