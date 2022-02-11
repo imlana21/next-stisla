@@ -10,8 +10,8 @@ export default function Home() {
         <title> Index </title>
       </Head>
       <HeaderComponent />
-      <FooterComponent />
       <SidebarComponent />
+      <FooterComponent />
     </div>
   )
 }
