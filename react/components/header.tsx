@@ -280,19 +280,18 @@ export default function HeaderComponent() {
             </div>
           </li>
           <li className="dropdown">
-            <a
-              href="javascript:void(0)"
+            <a href="javascript:void(0)"
               data-toggle="dropdown"
-              className="nav-link dropdown-toggle nav-link-lg nav-link-user"
-            >
+              className="nav-link dropdown-toggle nav-link-lg nav-link-user">
               <Image
                 alt="image"
                 src="/img/avatar/avatar-1.png"
-                className="rounded-circle mr-1"
-                layout="fill"
+                className="rounded-circle"
+                width="30"
+                height="30"
               />
-              <div className="d-sm-none d-lg-inline-block">Hi, Bang Ujang</div></a
-            >
+              <div className="d-sm-none d-lg-inline-block">Hi, Bang Ujang</div>
+            </a>
             <div className="dropdown-menu dropdown-menu-right">
               <div className="dropdown-title">Logged in 5 min ago</div>
               <a href="features-profile.html" className="dropdown-item has-icon">
