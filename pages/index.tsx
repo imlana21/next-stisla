@@ -1,3 +1,4 @@
+import SidebarComponent from '@components/sidebar/sidebar';
 import Head from 'next/head';
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
       <Head>
         <title> Index </title>
       </Head>
+      <SidebarComponent />
     </div>
   )
 }

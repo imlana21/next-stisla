@@ -18,12 +18,12 @@ function MyApp({ Component, pageProps }: any): JSX.Element {
       <Component {...pageProps} />
       <Script src="/modules/jquery.min.js"/>
       <Script src="/modules/popper.js"/>
-      <Script src="/modules/tooltip.js" strategy="lazyOnload" />
-      <Script src="/modules/bootstrap/js/bootstrap.min.js" strategy="lazyOnload" />
-      <Script src="/modules/nicescroll/jquery.nicescroll.min.js" strategy="lazyOnload" />
-      <Script src="/modules/moment.min.js" strategy="lazyOnload" />
-      <Script src="/js/stisla.js" strategy="lazyOnload" />
-      <Script src="/js/scripts.js" strategy="lazyOnload" />
+      <Script src="/modules/tooltip.js"/>
+      <Script src="/modules/nicescroll/jquery.nicescroll.min.js"/>
+      <Script src="/modules/moment.min.js"/>
+      <Script src="/modules/bootstrap/js/bootstrap.min.js"/>
+      <Script src="/js/stisla.js"/>
+      <Script src="/js/scripts.js"/>
     </div>
   )
 }
