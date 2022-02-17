@@ -7,17 +7,22 @@ export default function HeaderComponent() {
         <form className="form-inline mr-auto">
           <ul className="navbar-nav mr-3">
             <li>
-              <a href="javascript:void(0)" data-toggle="sidebar" className="nav-link nav-link-lg"
-                ><i className="fas fa-bars"></i
-              ></a>
+              <a 
+                onClick={ event => event.preventDefault() } 
+                data-toggle="sidebar" 
+                className="nav-link nav-link-lg"
+              >
+                <i className="fas fa-bars"></i>
+              </a>
             </li>
             <li>
               <a
-                href="javascript:void(0)"
+                onClick={ event => event.preventDefault() }
                 data-toggle="search"
                 className="nav-link nav-link-lg d-sm-none"
-                ><i className="fas fa-search"></i
-              ></a>
+              >
+                <i className="fas fa-search"></i>
+              </a>
             </li>
           </ul>
           <div className="search-element">
@@ -35,20 +40,36 @@ export default function HeaderComponent() {
             <div className="search-result">
               <div className="search-header">Histories</div>
               <div className="search-item">
-                <a href="javascript:void(0)">How to hack NASA using CSS</a>
-                <a href="javascript:void(0)" className="search-close"><i className="fas fa-times"></i></a>
+                <a 
+                  onClick={ event => event.preventDefault() }
+                > 
+                  How to hack NASA using CSS
+                </a>
+                <a 
+                  onClick={ event => event.preventDefault() } 
+                  className="search-close"
+                >
+                    <i className="fas fa-times"></i>
+                </a>
               </div>
               <div className="search-item">
-                <a href="javascript:void(0)">Kodinger.com</a>
-                <a href="javascript:void(0)" className="search-close"><i className="fas fa-times"></i></a>
+                <a onClick={ event => event.preventDefault() }>
+                  Kodinger.com
+                </a>
+                <a 
+                  onClick={ event => event.preventDefault() } 
+                  className="search-close"
+                >
+                  <i className="fas fa-times"></i>
+                </a>
               </div>
               <div className="search-item">
-                <a href="javascript:void(0)">#Stisla</a>
-                <a href="javascript:void(0)" className="search-close"><i className="fas fa-times"></i></a>
+                <a onClick={ event => event.preventDefault() }>#Stisla</a>
+                <a onClick={ event => event.preventDefault() } className="search-close"><i className="fas fa-times"></i></a>
               </div>
               <div className="search-header">Result</div>
               <div className="search-item">
-                <a href="javascript:void(0)">
+                <a onClick={ event => event.preventDefault() }>
                   <Image
                     className="mr-3 rounded"
                     width="30"
@@ -60,7 +81,7 @@ export default function HeaderComponent() {
                 </a>
               </div>
               <div className="search-item">
-                <a href="javascript:void(0)">
+                <a onClick={ event => event.preventDefault() }>
                   <Image
                     className="mr-3 rounded"
                     width="30"
@@ -72,7 +93,7 @@ export default function HeaderComponent() {
                 </a>
               </div>
               <div className="search-item">
-                <a href="javascript:void(0)">
+                <a onClick={ event => event.preventDefault() }>
                   <Image
                     className="mr-3 rounded"
                     width="30"
@@ -85,7 +106,7 @@ export default function HeaderComponent() {
               </div>
               <div className="search-header">Projects</div>
               <div className="search-item">
-                <a href="javascript:void(0)">
+                <a onClick={ event => event.preventDefault() }>
                   <div className="search-icon bg-danger text-white mr-3">
                     <i className="fas fa-code"></i>
                   </div>
@@ -93,7 +114,7 @@ export default function HeaderComponent() {
                 </a>
               </div>
               <div className="search-item">
-                <a href="javascript:void(0)">
+                <a onClick={ event => event.preventDefault() }>
                   <div className="search-icon bg-primary text-white mr-3">
                     <i className="fas fa-laptop"></i>
                   </div>
@@ -106,7 +127,7 @@ export default function HeaderComponent() {
         <ul className="navbar-nav navbar-right">
           <li className="dropdown dropdown-list-toggle">
             <a
-              href="javascript:void(0)"
+              onClick={ event => event.preventDefault() }
               data-toggle="dropdown"
               className="nav-link nav-link-lg message-toggle beep"
               ><i className="far fa-envelope"></i
@@ -115,11 +136,11 @@ export default function HeaderComponent() {
               <div className="dropdown-header">
                 Messages
                 <div className="float-right">
-                  <a href="javascript:void(0)">Mark All As Read</a>
+                  <a onClick={ event => event.preventDefault() }>Mark All As Read</a>
                 </div>
               </div>
               <div className="dropdown-list-content dropdown-list-message">
-                <a href="javascript:void(0)" className="dropdown-item dropdown-item-unread">
+                <a onClick={ event => event.preventDefault() } className="dropdown-item dropdown-item-unread">
                   <div className="dropdown-item-avatar">
                     <Image
                       alt="image"
@@ -135,7 +156,7 @@ export default function HeaderComponent() {
                     <div className="time">10 Hours Ago</div>
                   </div>
                 </a>
-                <a href="javascript:void(0)" className="dropdown-item dropdown-item-unread">
+                <a onClick={ event => event.preventDefault() } className="dropdown-item dropdown-item-unread">
                   <div className="dropdown-item-avatar">
                     <Image
                       alt="image"
@@ -152,7 +173,7 @@ export default function HeaderComponent() {
                     <div className="time">12 Hours Ago</div>
                   </div>
                 </a>
-                <a href="javascript:void(0)" className="dropdown-item dropdown-item-unread">
+                <a onClick={ event => event.preventDefault() } className="dropdown-item dropdown-item-unread">
                   <div className="dropdown-item-avatar">
                     <Image
                       alt="image"
@@ -171,7 +192,7 @@ export default function HeaderComponent() {
                     <div className="time">12 Hours Ago</div>
                   </div>
                 </a>
-                <a href="javascript:void(0)" className="dropdown-item">
+                <a onClick={ event => event.preventDefault() } className="dropdown-item">
                   <div className="dropdown-item-avatar">
                     <Image
                       alt="image"
@@ -189,7 +210,7 @@ export default function HeaderComponent() {
                     <div className="time">16 Hours Ago</div>
                   </div>
                 </a>
-                <a href="javascript:void(0)" className="dropdown-item">
+                <a onClick={ event => event.preventDefault() } className="dropdown-item">
                   <div className="dropdown-item-avatar">
                     <Image
                       alt="image"
@@ -208,13 +229,13 @@ export default function HeaderComponent() {
                 </a>
               </div>
               <div className="dropdown-footer text-center">
-                <a href="javascript:void(0)">View All <i className="fas fa-chevron-right"></i></a>
+                <a onClick={ event => event.preventDefault() }>View All <i className="fas fa-chevron-right"></i></a>
               </div>
             </div>
           </li>
           <li className="dropdown dropdown-list-toggle">
             <a
-              href="javascript:void(0)"
+              onClick={ event => event.preventDefault() }
               data-toggle="dropdown"
               className="nav-link notification-toggle nav-link-lg beep"
               ><i className="far fa-bell"></i
@@ -223,11 +244,11 @@ export default function HeaderComponent() {
               <div className="dropdown-header">
                 Notifications
                 <div className="float-right">
-                  <a href="javascript:void(0)">Mark All As Read</a>
+                  <a onClick={ event => event.preventDefault() }>Mark All As Read</a>
                 </div>
               </div>
               <div className="dropdown-list-content dropdown-list-icons">
-                <a href="javascript:void(0)" className="dropdown-item dropdown-item-unread">
+                <a onClick={ event => event.preventDefault() } className="dropdown-item dropdown-item-unread">
                   <div className="dropdown-item-icon bg-primary text-white">
                     <i className="fas fa-code"></i>
                   </div>
@@ -236,7 +257,7 @@ export default function HeaderComponent() {
                     <div className="time text-primary">2 Min Ago</div>
                   </div>
                 </a>
-                <a href="javascript:void(0)" className="dropdown-item">
+                <a onClick={ event => event.preventDefault() } className="dropdown-item">
                   <div className="dropdown-item-icon bg-info text-white">
                     <i className="far fa-user"></i>
                   </div>
@@ -245,7 +266,7 @@ export default function HeaderComponent() {
                     <div className="time">10 Hours Ago</div>
                   </div>
                 </a>
-                <a href="javascript:void(0)" className="dropdown-item">
+                <a onClick={ event => event.preventDefault() } className="dropdown-item">
                   <div className="dropdown-item-icon bg-success text-white">
                     <i className="fas fa-check"></i>
                   </div>
@@ -255,7 +276,7 @@ export default function HeaderComponent() {
                     <div className="time">12 Hours Ago</div>
                   </div>
                 </a>
-                <a href="javascript:void(0)" className="dropdown-item">
+                <a onClick={ event => event.preventDefault() } className="dropdown-item">
                   <div className="dropdown-item-icon bg-danger text-white">
                     <i className="fas fa-exclamation-triangle"></i>
                   </div>
@@ -264,7 +285,7 @@ export default function HeaderComponent() {
                     <div className="time">17 Hours Ago</div>
                   </div>
                 </a>
-                <a href="javascript:void(0)" className="dropdown-item">
+                <a onClick={ event => event.preventDefault() } className="dropdown-item">
                   <div className="dropdown-item-icon bg-info text-white">
                     <i className="fas fa-bell"></i>
                   </div>
@@ -275,12 +296,12 @@ export default function HeaderComponent() {
                 </a>
               </div>
               <div className="dropdown-footer text-center">
-                <a href="javascript:void(0)">View All <i className="fas fa-chevron-right"></i></a>
+                <a onClick={ event => event.preventDefault() }>View All <i className="fas fa-chevron-right"></i></a>
               </div>
             </div>
           </li>
           <li className="dropdown">
-            <a href="javascript:void(0)"
+            <a onClick={ event => event.preventDefault() }
               data-toggle="dropdown"
               className="nav-link dropdown-toggle nav-link-lg nav-link-user">
               <Image
@@ -304,7 +325,7 @@ export default function HeaderComponent() {
                 <i className="fas fa-cog"></i> Settings
               </a>
               <div className="dropdown-divider"></div>
-              <a href="javascript:void(0)" className="dropdown-item has-icon text-danger">
+              <a onClick={ event => event.preventDefault() } className="dropdown-item has-icon text-danger">
                 <i className="fas fa-sign-out-alt"></i> Logout
               </a>
             </div>

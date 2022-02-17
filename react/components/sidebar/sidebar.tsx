@@ -4,11 +4,29 @@ import { UrlObject } from "url";
 const listMenu = require('./menu.json');
 
 export default function SidebarComponent() {
-  const sidebarMenu = listMenu.map( (menu: { type: string; text: {} | null | undefined; menu: any[]; iconClass: string | undefined; }, i: any) => {
+  const sidebarMenu = listMenu.map((
+    menu: { 
+      type: string; 
+      text: {} | null | undefined; 
+      menu: any[]; 
+      iconClass: string | undefined; 
+      url: string | UrlObject
+    }, 
+    i: any
+  ) => {
     if (menu.type == 'header') {
-      return <li className="menu-header" key={`sidebar-${i}`}> { menu.text} </li>
+      return (
+        <li className="menu-header" key={`sidebar-${i}`}> { menu.text} </li>
+      );
     } else if (menu.type == 'dropdown') {
-      const dropdownMenus = menu.menu?.map( (dropdownMenu: { url: string | UrlObject; text: boolean | ReactChild | ReactFragment | ReactPortal | null | undefined; class: string}, j: any) => {
+      const dropdownMenus = menu.menu?.map((
+        dropdownMenu: { 
+          url: string | UrlObject; 
+          text: boolean | ReactChild | ReactFragment | ReactPortal | null | undefined; 
+          class: string
+        }, 
+        j: any
+      ) => {
         return (
           <li key={`dropdown-${j}`}>
             <Link href={dropdownMenu.url}>
@@ -22,15 +40,26 @@ export default function SidebarComponent() {
       
       return (
         <li className="dropdown" key={`sidebar-${i}`}>
-          <a href="javascript:void(0)" className="nav-link has-dropdown"><i
+          <a onClick={ event => event.preventDefault() } className="nav-link has-dropdown"><i
               className={menu.iconClass}></i><span> {menu.text} </span></a>
           <ul className="dropdown-menu">
             { dropdownMenus }
           </ul>
         </li>
       ) 
+    } else if (menu.type == 'normal') {
+      return (
+        <li key={`sidebar-${i}`}>
+          <Link href={menu?.url} key={`sidebar-${i}`}>
+            <a className="nav-link">
+              <i className="far fa-square"></i>
+              <span>Blank Page</span>
+            </a>
+          </Link>
+        </li>
+      );
     }
-  })
+  });
 
   return (
     <div>

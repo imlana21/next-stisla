@@ -6,7 +6,6 @@
   {
     "type": "dropdown",
     "text": "Dashboard",
-    "url": "javascript:void(0)",
     "iconClass": "fas fa-fire",
     "menu": [
       {
@@ -28,7 +27,6 @@
   {
     "type": "dropdown",
     "text": "Layout",
-    "url": "javascript:void(0)",
     "iconClass": "fas fa-columns",
     "menu": [
       {
@@ -47,7 +45,6 @@
   {
     "type": "dropdown",
     "text": "Bootstrap",
-    "url": "javascript:void(0)",
     "iconClass": "fas fa-th",
     "menu": [
       {
@@ -164,7 +161,6 @@
   {
     "type": "dropdown",
     "text": "Components",
-    "url": "javascript:void(0)",
     "iconClass": "fas fa-th-large",
     "menu": [
       {
@@ -236,7 +232,6 @@
   {
     "type": "dropdown",
     "text": "Forms",
-    "url": "javascript:void(0)",
     "iconClass": "far fa-file-alt",
     "menu": [
       {
