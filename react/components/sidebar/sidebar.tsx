@@ -1,32 +1,20 @@
 import Link from "next/link";
 import { ReactChild, ReactFragment, ReactPortal } from "react";
 import { UrlObject } from "url";
-const listMenu = require('./menu.json');
+import { 
+  brand, 
+  initialBrand, 
+  listMenu
+} from './config';
 
 export default function SidebarComponent() {
-  const sidebarMenu = listMenu.map((
-    menu: { 
-      type: string; 
-      text: {} | null | undefined; 
-      menu: any[]; 
-      iconClass: string | undefined; 
-      url: string | UrlObject
-    }, 
-    i: any
-  ) => {
+  const sidebarMenu = listMenu.map( (menu, i) => {
     if (menu.type == 'header') {
       return (
         <li className="menu-header" key={`sidebar-${i}`}> { menu.text} </li>
       );
     } else if (menu.type == 'dropdown') {
-      const dropdownMenus = menu.menu?.map((
-        dropdownMenu: { 
-          url: string | UrlObject; 
-          text: boolean | ReactChild | ReactFragment | ReactPortal | null | undefined; 
-          class: string
-        }, 
-        j: any
-      ) => {
+      const dropdownMenus = menu.menu?.map((dropdownMenu, j) => {
         return (
           <li key={`dropdown-${j}`}>
             <Link href={dropdownMenu.url}>
@@ -50,17 +38,17 @@ export default function SidebarComponent() {
     } else if (menu.type == 'normal') {
       return (
         <li key={`sidebar-${i}`}>
-          <Link href={menu?.url} key={`sidebar-${i}`}>
+          <Link href={menu.url || '#'} key={`sidebar-${i}`}>
             <a className="nav-link">
-              <i className="far fa-square"></i>
-              <span>Blank Page</span>
+              <i className={menu.iconClass}></i>
+              <span> {menu.text} </span>
             </a>
           </Link>
         </li>
       );
     }
-  });
-
+  })
+ 
   return (
     <div>
       <div className="main-sidebar sidebar-style-2">
@@ -68,14 +56,14 @@ export default function SidebarComponent() {
           <div className="sidebar-brand">
             <Link href="/dashboard/ecommerce">
               <a>
-                Next Stisla
+                { brand }
               </a>
             </Link>
           </div>
           <div className="sidebar-brand sidebar-brand-sm">
             <Link href="/dashboard/ecommerce">
               <a>
-                Ns
+                { initialBrand }
               </a>
             </Link>
           </div>
