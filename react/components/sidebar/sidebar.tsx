@@ -1,11 +1,9 @@
 import Link from "next/link";
-import { ReactChild, ReactFragment, ReactPortal } from "react";
-import { UrlObject } from "url";
 import { 
   brand, 
   initialBrand, 
   listMenu
-} from './config';
+} from './_config';
 
 export default function SidebarComponent() {
   const sidebarMenu = listMenu.map( (menu, i) => {
