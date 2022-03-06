@@ -13,3 +13,9 @@ a {
 * {
   box-sizing: border-box;
 }
+
+a.ticket-item:active {
+  color: "#6777ef";
+  border-bottom: "solid 3px #6777ef";
+  margin-left: "1em";
+}

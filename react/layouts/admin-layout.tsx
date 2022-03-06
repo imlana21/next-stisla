@@ -7,9 +7,7 @@ export default function AdminLayout({children}: any): JSX.Element {
     <div>
       <HeaderComponent />
       <SidebarComponent />
-      <div>
-        { children }
-      </div>
+      { children }
       <FooterComponent />
     </div>
   );
