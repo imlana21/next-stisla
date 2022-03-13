@@ -1,15 +1,13 @@
-import FooterComponent from "@components/footer/footer";
-import HeaderComponent from "@components/header/header";
-import SidebarComponent from "@components/sidebar/sidebar";
+import FooterComponent from "@components/footer";
+import HeaderComponent from "@components/header";
+import SidebarComponent from "@components/sidebar";
 
 export default function AdminLayout({children}: any): JSX.Element {
   return (
     <div>
       <HeaderComponent />
       <SidebarComponent />
-      <div>
-        { children }
-      </div>
+      { children }
       <FooterComponent />
     </div>
   );
