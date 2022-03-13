@@ -1,9 +1,24 @@
-import { useRef } from 'react';
-import { Chart, Line } from 'react-chartjs-2';
-import { CategoryScale, Chart as ChartJS, LinearScale, LineElement, PointElement} from 'chart.js';
+import { Line } from 'react-chartjs-2';
+import { 
+  CategoryScale, Chart as ChartJS, 
+  LinearScale, 
+  LineElement, 
+  PointElement, 
+  Legend,
+  Filler,
+  Tooltip,
+} from 'chart.js';
 
 export default function BudgetSalesChart() {
-  ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement);
+  ChartJS.register(
+    CategoryScale, 
+    LinearScale, 
+    PointElement, 
+    LineElement, 
+    Legend,
+    Filler,
+    Tooltip,
+  );
 
   return (
     <div className="card">
@@ -27,31 +42,22 @@ export default function BudgetSalesChart() {
               label: "Sales",
               data: [3200, 1800, 4305, 3022, 6310, 5120, 5880, 6154],
               fill: true,
-              tension: 0.1,
-              borderWidth: 2,
               backgroundColor: 'rgba(63, 82, 227, 0.8)',
-              borderColor: 'rgba(63,82,227,.8)',
-              borderCapStyle: 'round',
-              borderDash: [],
-              borderDashOffset: 0.0,
+              borderColor: 'transparent',
+              pointBorderWidth: 0,
               pointRadius: 3.5,
               pointBackgroundColor: "transparent",
               pointHoverBackgroundColor: "rgba(63,82,227,.8)",
-              pointBorderWidth: 0,
-              pointHoverBorderWidth: 2.5,
-              pointHoverRadius: 1,
-              pointHitRadius: 10,
             },
             {
               label: "Budget",
               data: [2207, 3403, 2200, 5025, 2302, 4208, 3880, 4880],
-              fill: false,
+              fill: true,
               backgroundColor: "rgba(254,86,83,.7)",
-              borderColor: "#742774",
+              borderColor: "transparent",
               pointBorderWidth: 0,
               pointRadius: 3.5,
               pointBackgroundColor: "transparent",
-              pointHoverBackgroundColor: "rgba(254,86,83,.8)",
             }],
           }}
           options={{
@@ -66,12 +72,18 @@ export default function BudgetSalesChart() {
                   color: "#323130"
                 }
               },
+              tooltip: {
+                displayColors: true,
+                boxWidth: 10,
+                boxHeight: 10,
+                boxPadding: 5
+              }
             },
             scales: {
               y: {
                 grid: {
                   color: "#f2f2f2",
-                  drawBorder: false
+                  drawBorder: false,
                 },
                 ticks: {
                   stepSize: 1500,
