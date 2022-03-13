@@ -8,8 +8,6 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title> Next Stisla </title>
-        <meta name="description" content="Next with Stisla Admin" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>

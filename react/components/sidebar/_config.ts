@@ -14,12 +14,12 @@ export const listMenu = [
     menu: [
       {
         type: "dropdown-menu",
-        url: "/dashboard/general",
+        url: "/stisla/dashboard/general",
         text: "General Dashboard"
       },
       {
         type: "dropdown-menu",
-        url: "/dashboard/ecommerce",
+        url: "/stisla/dashboard/ecommerce",
         text: "Ecommerce Dashboard"
       }
     ]

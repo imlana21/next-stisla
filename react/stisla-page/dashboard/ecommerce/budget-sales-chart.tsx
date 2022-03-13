@@ -87,9 +87,6 @@ export default function BudgetSalesChart() {
                 },
                 ticks: {
                   stepSize: 1500,
-                  callback: (value, index, values) => {
-                    return `$${value}`;
-                  },
                 },
                 suggestedMin: 100,
                 suggestedMax: 100
