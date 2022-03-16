@@ -1,5 +1,5 @@
 import AdminLayout from "@layouts/admin-layout";
-import DefaultComponent from "@stisla/dashboard/default/default";
+import GeneralDashboard from "@stisla/dashboard/general";
 import Head from "next/head";
 
 export default function DashboardDefault() {
@@ -8,7 +8,7 @@ export default function DashboardDefault() {
       <Head>
         <title> Dashboard Default </title>
       </Head>
-      <DefaultComponent />
+      <GeneralDashboard />
     </AdminLayout>
   );
 }
