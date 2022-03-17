@@ -78,4 +78,42 @@ export const messageData = [
     time: "Yesterday"
   },
 
-]
+];
+
+export const notifData = [
+  {
+    notifUrl: '#',
+    icon: 'fas fa-code',
+    iconBg: 'bg-primary',
+    notification: 'Template update is available now!',
+    time: '2 Min Ago',
+  },
+  {
+    notifUrl: '#',
+    icon: 'far fa-user',
+    iconBg: 'bg-info',
+    notification: '<b>You</b> and <b>Dedik Sugiharto</b> are now friends',
+    time: '10 Hours Ago',
+  },
+  {
+    notifUrl: '#',
+    icon: 'fas fa-check',
+    iconBg: 'bg-success',
+    notification: '<b>Kusnaedi</b> has moved task <b>Fix bug header</b> to<b>Done</b>',
+    time: '12 Hours Ago',
+  },
+  {
+    notifUrl: '#',
+    icon: 'fas fa-exclamation-triangle',
+    iconBg: 'bg-danger',
+    notification: 'Low disk space. Let&lsquo;s clean it!',
+    time: '17 Hours Ago',
+  },
+  {
+    notifUrl: '#',
+    icon: 'fas fa-bell',
+    iconBg: 'bg-info',
+    notification: 'Welcome to Stisla template!',
+    time: 'Yesterday',
+  },
+];
