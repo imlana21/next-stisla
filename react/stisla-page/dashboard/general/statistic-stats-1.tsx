@@ -47,14 +47,14 @@ export default function StatisticStats1() {
               <li className="media">
                 <a href="javascript:void(0)">
                   <Image
-                    className="mr-3 rounded"
+                    className="rounded"
                     width="50"
                     height="50"
                     src="/img/products/product-1-50.png"
                     alt="product"
                   />
                 </a>
-                <div className="media-body">
+                <div className="ml-3 media-body">
                   <div className="media-right">$405</div>
                   <div className="media-title">
                     <a href="javascript:void(0)">PlayStation 9</a>
@@ -69,14 +69,14 @@ export default function StatisticStats1() {
               <li className="media">
                 <a href="javascript:void(0)">
                   <Image
-                    className="mr-3 rounded"
+                    className="rounded"
                     width="50"
                     height="50"
                     src="/img/products/product-2-50.png"
                     alt="product"
                   />
                 </a>
-                <div className="media-body">
+                <div className="ml-3 media-body">
                   <div className="media-right">$499</div>
                   <div className="media-title"><a href="javascript:void(0)">RocketZ</a></div>
                   <div className="text-muted text-small">
@@ -89,14 +89,14 @@ export default function StatisticStats1() {
               <li className="media">
                 <a href="javascript:void(0)">
                   <Image
-                    className="mr-3 rounded"
+                    className="rounded"
                     width="50"
                     height="50"
                     src="/img/products/product-3-50.png"
                     alt="product"
                   />
                 </a>
-                <div className="media-body">
+                <div className="ml-3 media-body">
                   <div className="media-right">$149</div>
                   <div className="media-title">
                     <a href="javascript:void(0)">Xiaomay Readme 4.0</a>

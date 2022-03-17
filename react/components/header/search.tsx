@@ -68,6 +68,7 @@ export default function HeaderSearch() {
             onClick={event => event.preventDefault()}
             data-toggle="sidebar"
             className="nav-link nav-link-lg"
+            href="#"
           >
             <i className="fas fa-bars"></i>
           </a> 
@@ -77,6 +78,7 @@ export default function HeaderSearch() {
             onClick={event => event.preventDefault()}
             data-toggle="search"
             className="nav-link nav-link-lg d-sm-none"
+            href="#"
           >
             <i className="fas fa-search"></i>
           </a>

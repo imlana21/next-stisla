@@ -4,16 +4,19 @@ export default function HeaderUserDropdown() {
   return (
     <li className="dropdown">
       <a onClick={event => event.preventDefault()}
+        href="#"
         data-toggle="dropdown"
         className="nav-link dropdown-toggle nav-link-lg nav-link-user">
         <Image
           alt="image"
           src="/img/avatar/avatar-1.png"
-          className="rounded-circle"
+          className="rounded-circle align-items-center"
           width="30"
           height="30"
         />
-        <div className="d-sm-none d-lg-inline-block">Hi, Bang Ujang</div>
+        <div className="d-sm-none d-lg-inline-block pl-2">
+          Hi, Bang Ujang
+        </div>
       </a>
       <div className="dropdown-menu dropdown-menu-right">
         <div className="dropdown-title">Logged in 5 min ago</div>

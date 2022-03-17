@@ -1,112 +1,54 @@
 import Image from "next/image";
+import { messageData } from "./_data";
 
 export default function HeaderMessageDropdown() {
+  const listMessage = messageData.map( (data, i) => {
+    return (
+      <a href={ data.messageUrl }
+        key={ `message${i}` }
+        className="dropdown-item dropdown-item-unread">
+          <div className="dropdown-item-avatar">
+            <Image
+              alt="image"
+              src={ data.imgUrl }
+              className="rounded-circle"
+              height="50"
+              width="50"
+            />
+            <div className="is-online"></div>
+          </div>
+          <div className="dropdown-item-desc">
+            <b> { data.userName } </b>
+            <p> { data.message } </p>
+            <div className="time"> { data.time } </div>
+          </div>
+      </a>
+    )
+  });
+
   return (
     <li className="dropdown dropdown-list-toggle">
-      <a
+      <a href="#"
         onClick={event => event.preventDefault()}
         data-toggle="dropdown"
-        className="nav-link nav-link-lg message-toggle beep"
-      ><i className="far fa-envelope"></i
-      ></a>
+        className="nav-link nav-link-lg message-toggle beep">
+          <i className="far fa-envelope"></i>
+      </a>
       <div className="dropdown-menu dropdown-list dropdown-menu-right">
         <div className="dropdown-header">
           Messages
           <div className="float-right">
-            <a onClick={event => event.preventDefault()}>Mark All As Read</a>
+            <a href="#" onClick={event => event.preventDefault()}>Mark All As Read</a>
           </div>
         </div>
         <div className="dropdown-list-content dropdown-list-message">
-          <a onClick={event => event.preventDefault()} className="dropdown-item dropdown-item-unread">
-            <div className="dropdown-item-avatar">
-              <Image
-                alt="image"
-                src="/img/avatar/avatar-1.png"
-                className="rounded-circle"
-                layout="fill"
-              />
-              <div className="is-online"></div>
-            </div>
-            <div className="dropdown-item-desc">
-              <b>Kusnaedi</b>
-              <p>Hello, Bro!</p>
-              <div className="time">10 Hours Ago</div>
-            </div>
-          </a>
-          <a onClick={event => event.preventDefault()} className="dropdown-item dropdown-item-unread">
-            <div className="dropdown-item-avatar">
-              <Image
-                alt="image"
-                src="/img/avatar/avatar-2.png"
-                className="rounded-circle"
-                layout="fill"
-              />
-            </div>
-            <div className="dropdown-item-desc">
-              <b>Dedik Sugiharto</b>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit
-              </p>
-              <div className="time">12 Hours Ago</div>
-            </div>
-          </a>
-          <a onClick={event => event.preventDefault()} className="dropdown-item dropdown-item-unread">
-            <div className="dropdown-item-avatar">
-              <Image
-                alt="image"
-                src="/img/avatar/avatar-3.png"
-                className="rounded-circle"
-                layout="fill"
-              />
-              <div className="is-online"></div>
-            </div>
-            <div className="dropdown-item-desc">
-              <b>Agung Ardiansyah</b>
-              <p>
-                Sunt in culpa qui officia deserunt mollit anim id est
-                laborum.
-              </p>
-              <div className="time">12 Hours Ago</div>
-            </div>
-          </a>
-          <a onClick={event => event.preventDefault()} className="dropdown-item">
-            <div className="dropdown-item-avatar">
-              <Image
-                alt="image"
-                src="/img/avatar/avatar-4.png"
-                className="rounded-circle"
-                layout="fill"
-              />
-            </div>
-            <div className="dropdown-item-desc">
-              <b>Ardian Rahardiansyah</b>
-              <p>
-                Duis aute irure dolor in reprehenderit in voluptate velit
-                ess
-              </p>
-              <div className="time">16 Hours Ago</div>
-            </div>
-          </a>
-          <a onClick={event => event.preventDefault()} className="dropdown-item">
-            <div className="dropdown-item-avatar">
-              <Image
-                alt="image"
-                src="/img/avatar/avatar-5.png"
-                className="rounded-circle"
-                layout="fill"
-              />
-            </div>
-            <div className="dropdown-item-desc">
-              <b>Alfa Zulkarnain</b>
-              <p>
-                Exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              </p>
-              <div className="time">Yesterday</div>
-            </div>
-          </a>
+          { listMessage }
         </div>
         <div className="dropdown-footer text-center">
-          <a onClick={event => event.preventDefault()}>View All <i className="fas fa-chevron-right"></i></a>
+          <a href="#"
+            onClick={event => event.preventDefault()}>
+              View All <i className="fas fa-chevron-right"></i>
+          </a>
         </div>
       </div>
     </li>
