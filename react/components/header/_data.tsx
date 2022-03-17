@@ -40,3 +40,42 @@ export const searchData = [
     text: 'Create a new Homepage Design',
   }
 ]
+
+export const messageData = [
+  {
+    messageUrl: "#",
+    imgUrl: "/img/avatar/avatar-1.png",
+    userName: "Kusnaedi",
+    message: "Hello, Bro!",
+    time: "10 Hours Ago"
+  },
+  {
+    messageUrl: "#",
+    imgUrl: "/img/avatar/avatar-2.png",
+    userName: "Dedik Sugiharto",
+    message: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+    time: "12 Hours Ago"
+  },
+  {
+    messageUrl: "#",
+    imgUrl: "/img/avatar/avatar-3.png",
+    userName: "Agung Ardiansyah",
+    message: "Sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    time: "12 Hours Ago"
+  },
+  {
+    messageUrl: "#",
+    imgUrl: "/img/avatar/avatar-4.png",
+    userName: "Ardian Rahardiansyah",
+    message: "Duis aute irure dolor in reprehenderit in voluptate velit ess",
+    time: "16 Hours Ago"
+  },
+  {
+    messageUrl: "#",
+    imgUrl: "/img/avatar/avatar-5.png",
+    userName: "Alfa Zulkarnain",
+    message: "Exercitation ullamco laboris nisi ut aliquip ex ea commodo",
+    time: "Yesterday"
+  },
+
+]
