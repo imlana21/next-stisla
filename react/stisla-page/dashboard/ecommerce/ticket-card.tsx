@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { customerTicket } from "./_data";
 
-export default function CustomerTicketCard() {
+export default function TicketCard() {
   const ticket_list = customerTicket.map( (ticket, i:number) => {
     return (
       <a href={ticket.url} className="ticket-item" key={`ticket${i}`}>
