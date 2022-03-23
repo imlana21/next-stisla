@@ -1,4 +1,4 @@
-export default function StatisticChart1({ header }: any) {
+export default function StatisticCanvas2({ header }: any) {
   return(
     <div className="card">
       <div className="card-header">

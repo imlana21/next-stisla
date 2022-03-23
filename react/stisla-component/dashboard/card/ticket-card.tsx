@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { customerTicket } from "./_data";
+import { customerTicket } from "../../../../pages/stisla/dashboard/_data";
 
 export default function TicketCard() {
   const ticket_list = customerTicket.map( (ticket, i:number) => {

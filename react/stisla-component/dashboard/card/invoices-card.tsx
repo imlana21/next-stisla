@@ -1,6 +1,6 @@
-import { invoices } from "./_data"
+import { invoices } from "../../../../pages/stisla/dashboard/_data"
 
-export default function InvoicesCard() {
+export default function InvoicesCard(data:any) {
   const invoicesTableRow = invoices.map( (invoice, i) => {
     return (
       <tr key={`invoice-${i}`}>

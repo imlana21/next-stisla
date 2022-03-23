@@ -20,7 +20,7 @@
       "@components/*": ["react/components/*"],
       "@layouts/*": ["react/layouts/*"],
       "@lib/*": ["lib/*"],
-      "@stisla/*": ["react/stisla-page/*"]
+      "@stisla/*": ["react/stisla-component/*"]
     },
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

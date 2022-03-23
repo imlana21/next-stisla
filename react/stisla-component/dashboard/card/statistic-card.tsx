@@ -1,4 +1,4 @@
-export default function StatisticCard4({header, text, icon, iconBg}: any): JSX.Element {
+export default function StatisticCard({header, text, icon, iconBg}: any): JSX.Element {
   return (
     <div className="card card-statistic-1">
       <div className={`card-icon ${iconBg}`}>

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useState } from "react";
-import { top5Product } from "./_data";
+import { top5Product } from "../../../../pages/stisla/dashboard/_data";
 
 export default function TopProductCard() {
   const [period, setPeriod] = useState('Today');
