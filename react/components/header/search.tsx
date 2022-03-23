@@ -20,7 +20,7 @@ export default function HeaderSearch() {
   const listHistories = searchData.map( (data, i) => {
     if (data.type === 'histories') {
       return (
-        <div className="search-item">
+        <div className="search-item" key={`histories-${i}`}>
           <a
             onClick={event => event.preventDefault()}
           >
@@ -40,7 +40,7 @@ export default function HeaderSearch() {
   const listResults = searchData.map( (data, i) => {
     if(data.type === 'results' && data.imgUrl !== undefined) {
       return (
-        <div className="search-item">
+        <div className="search-item" key={`results-${i}`}>
           <a onClick={event => event.preventDefault()}>
             <span>
               <Image

@@ -4,7 +4,7 @@ import SidebarComponent from "@components/sidebar";
 
 export default function AdminLayout({children}: any): JSX.Element {
   return (
-    <div>
+    <div className="main-wrapper main-wrapper-1">
       <HeaderComponent />
       <SidebarComponent />
       { children }

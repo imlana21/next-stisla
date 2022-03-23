@@ -13,7 +13,7 @@ export default function InvoicesCard() {
         </td>
         <td> { invoice.due_date } </td>
         <td>
-          <a href="#" className="btn btn-primary">
+          <a href="#" className="btn btn-primary" onClick={ (e) => e.preventDefault() }>
             Detail
           </a>
         </td>
