@@ -39,7 +39,8 @@ export default function StatisticMonth() {
                       <a onClick={ e => { 
                           e.preventDefault(); 
                           setMonthActive(m);
-                        } } href="#" className="dropdown-item">
+                        } } href="#" 
+                        className={ `dropdown-item ${ m == monthActive ? 'active' : ''}` }>
                         { m }
                       </a>
                     </li>

@@ -1,7 +1,11 @@
 import Image from "next/image";
+import { useState } from "react";
 import { top5Product } from "./_data";
 
 export default function TopProductCard() {
+  const [period, setPeriod] = useState('Today');
+  const listPeriod = ["Today", "Week", "Month", "This Year"];
+
   const topProductList = top5Product.map( (product, i) => {
     const priceSell = parseInt(product.price.sell);
     const priceBudget = parseInt(product.price.budget);
@@ -55,14 +59,22 @@ export default function TopProductCard() {
             href="#"
             data-toggle="dropdown"
             className="btn btn-danger dropdown-toggle"
-          >Month</a
+          > { period } </a
           >
           <ul className="dropdown-menu dropdown-menu-sm dropdown-menu-right">
             <li className="dropdown-title">Select Period</li>
-            <li><a onClick={e => e.preventDefault()} href="#" className="dropdown-item">Today</a></li>
-            <li><a onClick={e => e.preventDefault()} href="#" className="dropdown-item">Week</a></li>
-            <li><a onClick={e => e.preventDefault()} href="#" className="dropdown-item active">Month</a></li>
-            <li><a onClick={e => e.preventDefault()} href="#" className="dropdown-item">This Year</a></li>
+            {
+              listPeriod.map( (p, i) => {
+                return (
+                  <li key={`period-${i}`}>
+                    <a onClick={ (e) => {
+                      e.preventDefault();
+                      setPeriod(p);
+                    }} href="#" className={ `dropdown-item ${p == period ? "active" : ""}` }> { p } </a>
+                  </li>
+                )
+              })
+            }
           </ul>
         </div>
       </div>

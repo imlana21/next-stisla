@@ -1,7 +1,6 @@
 import TicketCard from "./ticket-card";
 import InvoicesCard from "./invoices-card";
 import TopProductCard from "./top-product-card";
-import TopCountries from "./top-countries";
 import StatisticMonth from "./statistic-month";
 import StatisticCanvas from "./statistic-canvas";
 import BasicCard from "./basic-card";
@@ -234,7 +233,9 @@ export default function EcommercePage() {
             </BasicCard>
           </div>
           <div className="col-md-6">
-            <TopCountries />
+            <BasicCard title="Top Countries">
+              { /* <FlagEcom data={flagData} />  */}
+            </BasicCard>
           </div>
         </div>
         <div className="row">
