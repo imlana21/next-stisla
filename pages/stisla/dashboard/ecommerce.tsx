@@ -1,4 +1,3 @@
-import AdminLayout from '@layouts/admin-layout';
 import Head from 'next/head';
 import { Line } from 'react-chartjs-2';
 import { 
@@ -12,14 +11,16 @@ import {
   Tooltip 
 } from "chart.js";
 import Image from 'next/image';
-import StatisticMonth from '@stisla/dashboard/card/statistic-month';
-import StatisticCanvas from '@stisla/dashboard/card/statistic-canvas';
-import BasicCard from '@stisla/dashboard/card/basic-card';
-import TopProductCard from '@stisla/dashboard/card/top-product-card';
-import InvoicesCard from '@stisla/dashboard/card/invoices-card';
-import TicketCard from '@stisla/dashboard/card/ticket-card';
+import { customerTicket, invoices, top5Product } from './_data';
+import BasicLayout from '@stisla/basic-layout';
+import StatisticMonth from '@stisla/component/card/statistic-month';
+import StatisticCanvas from '@stisla/component/card/statistic-canvas';
+import BasicCard from '@stisla/component/card/basic-card';
+import TopProductCard from '@stisla/component/card/top-product-card';
+import InvoicesCard from '@stisla/component/card/invoices-card';
+import TicketCard from '@stisla/component/card/ticket-card';
 
-export default function DashboardEcommerce() {
+export default function DashboardEcommercePage() {
   ChartJS.register(
     CategoryScale, 
     LinearScale, 
@@ -31,7 +32,7 @@ export default function DashboardEcommerce() {
   );
 
   return (
-    <AdminLayout>
+    <BasicLayout>
       <Head>
         <title> Dashbboard Ecommerce </title>
       </Head>
@@ -137,7 +138,7 @@ export default function DashboardEcommerce() {
               </BasicCard>
             </div>
             <div className="col-lg-4">
-              <TopProductCard />
+              <TopProductCard products={ top5Product }/>
             </div>
           </div>
           <div className="row">
@@ -241,14 +242,14 @@ export default function DashboardEcommerce() {
           </div>
           <div className="row">
             <div className="col-md-8">
-              <InvoicesCard />
+              <InvoicesCard invoices={ invoices } />
             </div>
             <div className="col-md-4">
-              <TicketCard />
+              <TicketCard customerTicket={ customerTicket }/>
             </div>
           </div>
         </section>
       </div>
-    </AdminLayout>
+    </BasicLayout>
   );
 }

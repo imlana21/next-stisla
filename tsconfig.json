@@ -16,11 +16,11 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
+      "@lib/*": ["lib/*"],
       "@styles/*": ["styles/*"],
       "@components/*": ["react/components/*"],
-      "@layouts/*": ["react/layouts/*"],
-      "@lib/*": ["lib/*"],
-      "@stisla/*": ["react/stisla-component/*"]
+      "@layouts/*": ["react/stisla/layouts/*"],
+      "@stisla/*": ["react/stisla/*"]
     },
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

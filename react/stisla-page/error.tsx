@@ -1,7 +1,7 @@
-import Error403Component from "@components/error/403";
-import Error404Component from "@components/error/404";
-import Error500Component from "@components/error/500";
-import Error503Component from "@components/error/503";
+import Error403Component from "react/stisla/component/error/403";
+import Error404Component from "react/stisla/component/error/404";
+import Error500Component from "react/stisla/component/error/500";
+import Error503Component from "react/stisla/component/error/503";
 
 
 export default function ErrorPageComponent() {

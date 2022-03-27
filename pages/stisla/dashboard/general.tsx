@@ -1,12 +1,12 @@
-import AdminLayout from "@layouts/admin-layout";
-import StatisticCanvas2 from "@stisla/dashboard/card/statistic-canvas-2";
-import StatisticCard from "@stisla/dashboard/card/statistic-card";
-import StatisticStats1 from "@stisla/dashboard/card/statistic-stats-1";
+import BasicLayout from "@stisla/basic-layout";
+import StatisticCanvas2 from "@stisla/component/card/statistic-canvas-2";
+import StatisticCard from "@stisla/component/card/statistic-card";
+import StatisticStats1 from "@stisla/component/card/statistic-stats-1";
 import Head from "next/head";
 
-export default function DashboardDefault() {
+export default function DashboardDefaultPage() {
   return (
-    <AdminLayout>
+    <BasicLayout>
       <Head>
         <title> Dashboard Default </title>
       </Head>
@@ -55,6 +55,6 @@ export default function DashboardDefault() {
           </div>
         </section>
       </div>
-    </AdminLayout>
+    </BasicLayout>
   );
 }
