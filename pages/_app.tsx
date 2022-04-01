@@ -119,7 +119,7 @@ function MyApp({ Component, pageProps }: any): JSX.Element {
   });
 
   return (
-    <div>
+    <div id='app'>
       <Head>
         <meta charSet="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -127,7 +127,9 @@ function MyApp({ Component, pageProps }: any): JSX.Element {
         <meta name="description" content="Next with Stisla Admin" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Component {...pageProps} />
+      <div className='main-wrapper'>
+        <Component {...pageProps} />
+      </div>
     </div>
   );
 }

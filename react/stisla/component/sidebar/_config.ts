@@ -35,8 +35,18 @@ export const listMenu = [
     menu: [
       {
         type: "dropdown-menu",
-        url: "/stisla/default",
+        url: "/stisla/layouts/default",
         text: "Default Layout"
+      },
+      {
+        type: "dropdown-menu",
+        url: "/stisla/layouts/transparent",
+        text: "Transparent Sidebar"
+      },
+      {
+        type: "dropdown-menu",
+        url: "/stisla/layouts/top-nav",
+        text: "Top Navigation"
       }
     ]
   },
@@ -160,7 +170,7 @@ export const listMenu = [
   },
   {
     type: "header",
-    text: "Stisla"
+    text: "Next Stisla"
   },
   {
     type: "dropdown",
@@ -169,7 +179,7 @@ export const listMenu = [
     menu: [
       {
         type: "dropdown-menu",
-        url: "/starter/layout/defaultLayout",
+        url: "/stisla/component/article",
         text: "Article"
       },
       {
