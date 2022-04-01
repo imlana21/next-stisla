@@ -7,7 +7,9 @@ export default function BasicLayout({children}: any): JSX.Element {
     <div className="main-wrapper main-wrapper-1">
       <HeaderComponent />
       <SidebarComponent />
-      { children }
+      <div className="main-content">
+        { children }
+      </div>
       <FooterComponent />
     </div>
   );

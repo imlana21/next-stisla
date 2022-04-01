@@ -184,7 +184,7 @@ export const listMenu = [
       },
       {
         type: "dropdown-menu",
-        url: "/starter/layout/defaultLayout",
+        url: "/stisla/component/avatar",
         class: "beep beep-sidebar",
         text: "Avatar"
       },
