@@ -190,12 +190,12 @@ export const listMenu = [
       },
       {
         type: "dropdown-menu",
-        url: "/starter/layout/defaultLayout",
+        url: "/stisla/component/chatbox",
         text: "Chat Box"
       },
       {
         type: "dropdown-menu",
-        url: "/starter/layout/defaultLayout",
+        url: "/stisla/component/empty-state",
         class: "beep beep-sidebar",
         text: "Empty State"
       },

@@ -2,10 +2,14 @@ import BasicLayout from "@stisla/basic-layout";
 import ArticleStyle1 from "@stisla/component/article/article-1";
 import ArticleStyle2 from "@stisla/component/article/article-2";
 import ArticleStyle3 from "@stisla/component/article/article-3";
+import Head from "next/head";
 
 export default function ComponentArticlePage() {
   return (
     <BasicLayout>
+      <Head>
+        <title> Article Component </title>
+      </Head>
       <section className="section">
         <div className="section-header">
           <h1>Article</h1>

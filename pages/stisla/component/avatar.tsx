@@ -4,10 +4,14 @@ import AvatarIcon from "@stisla/component/avatar/icon";
 import AvatarInitial from "@stisla/component/avatar/initial";
 import AvatarPresence from "@stisla/component/avatar/presence";
 import BasicCard from "@stisla/component/card/basic-card";
+import Head from "next/head";
 
 export default function ComponentAvatarPage() {
   return (
     <BasicLayout>
+      <Head>
+        <title> Avatar Component </title>
+      </Head>
       <section className="section">
         <div className="section-header">
           <h1>Avatar</h1>
