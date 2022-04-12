@@ -1,7 +1,11 @@
 import BasicLayout from "@stisla/basic-layout";
 import Head from "next/head";
+import { useEffect } from "react";
 
 export default function ComponentGalleryPage() {
+  useEffect( () => {
+    // import { DatImage } from "../../js/DataImage";
+  })
   return (
     <BasicLayout>
       <Head>

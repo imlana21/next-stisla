@@ -2,9 +2,13 @@ import BasicLayout from "@stisla/basic-layout";
 import Chatbox1 from "@stisla/component/card/chatbox-1";
 import Chatbox2 from "@stisla/component/card/chatbox-2";
 import OnlineUserBox from "@stisla/component/card/online-user-box";
-import Image from "next/image";
+import { useEffect } from "react";
 
 export default function ComponentChatboxPage() {
+  useEffect( () => {
+    //import { Chatjs } from "../../js/Chat";
+  });
+  
   return (
     <BasicLayout>
       <section className="section">

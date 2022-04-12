@@ -1,8 +1,12 @@
 import BasicLayout from "@stisla/basic-layout";
+import Head from "next/head";
 
 export default function ComponentHeroPage() {
   return (
     <BasicLayout>
+      <Head>
+        <title> Component Hero </title>
+      </Head>
       <section className="section">
         <div className="section-header">
           <h1>Hero</h1>
